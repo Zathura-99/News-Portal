@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon"> 
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-bar flex container">
+            <a href="#" onclick="reload()" class="logo">
+                <img src="logo.png" alt="logo" id="logo">
+            </a>
+
+            <div class="nav-links">
+                <ul class="flex" id="nav-list">
+                    <li class="hover-link js-nav-item" id="India">India</li>
+                    <li class="hover-link js-nav-item" id="Business">Business</li>
+                    <li class="hover-link js-nav-item" id="Politics">Politics</li>
+                    <li class="hover-link js-nav-item" id="Finance">Finance</li>
+                    <li class="hover-link js-nav-item" id="Sports">Sports</li>
+                    <li class="hover-link js-nav-item" id="Education">Education</li>
+                    <li class="hover-link js-nav-item" id="Entertainment">Entertainment</li>
+                </ul>
+            </div>
+
+            <div class="search-bar flex">
+                <input type="text" class="news-input" placeholder="e.g. Science" id="text-input">
+                <button class="search-button" id="search-button">Search</button>
+            </div>
+
+            <img src="moon.png" alt="change theme" class="icon" id="icon">
+        </div>
+    </nav>
+
+    <main>
+        <div class="cards-container container flex" id="cards-container"></div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img" loading="lazy">
+            </div>
+
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+
+                <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+
+                <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae saepe quis voluptatum quisquam vitae doloremque facilis molestias quae ratione cumque!</p>
+            </div>
+        </div>
+    </template>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
